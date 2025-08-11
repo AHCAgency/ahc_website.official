@@ -82,34 +82,47 @@
 </head>
 <body data-theme="light">
 
-<!-- Mobile View Sticky Banner with Close Button + Permanent Memory -->
+<!-- Mobile View Sticky Banner with Close Button + Permanent Memory + Animation -->
 <div class="mobile-banner" id="mobileBanner">
-  💻 Best viewed on desktop for the full experience — mobile-friendly version available
+  💻 Best viewed on <strong>desktop</strong> for the full experience
   <span class="close-banner" onclick="closeBanner()">✖</span>
 </div>
 
 <style>
 .mobile-banner {
-  background-color: #f4f4f4;
-  color: #333;
-  font-size: 14px;
+  background-color: #ff6b35; /* Vibrant orange */
+  color: #fff;
+  font-size: 16px; /* Larger font */
+  font-weight: 500;
   text-align: center;
-  padding: 8px 30px 8px 12px;
+  padding: 10px 35px 10px 14px;
   font-family: Arial, sans-serif;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
   position: sticky;
   top: 0;
   z-index: 9999;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 0.5s ease-out forwards;
 }
 
 .close-banner {
   position: absolute;
-  right: 10px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   font-weight: bold;
-  color: #666;
+  color: #fff;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
