@@ -81,6 +81,58 @@
   </style>
 </head>
 <body data-theme="light">
+
+<!-- Mobile View Sticky Banner with Close Button + Permanent Memory -->
+<div class="mobile-banner" id="mobileBanner">
+  💻 Best viewed on desktop for the full experience — mobile-friendly version available
+  <span class="close-banner" onclick="closeBanner()">✖</span>
+</div>
+
+<style>
+.mobile-banner {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 30px 8px 12px;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.close-banner {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .mobile-banner {
+    display: none;
+  }
+}
+</style>
+
+<script>
+// Hide banner if previously closed
+if (localStorage.getItem('bannerClosed') === 'true') {
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('mobileBanner').style.display = 'none';
+  });
+}
+
+function closeBanner() {
+  document.getElementById('mobileBanner').style.display = 'none';
+  localStorage.setItem('bannerClosed', 'true');
+}
+</script>
+
   <div class="container">
     <header>
       <div class="brand">
