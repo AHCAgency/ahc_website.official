@@ -1,19 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AHC Agency — Video Promotion & Web Bundles</title>
-  <meta name="description" content="AHC Agency — Multi-platform video promotion, website builds and growth bundles for small businesses." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>AHC Agency — Video Promotion &amp; Web Bundles</title>
+<meta content="AHC Agency — Multi-platform video promotion, website builds and growth bundles for small businesses." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="data:;base64,iVBORw0KGgo=" rel="icon"/>
+<style>
     :root{
       --bg:#ffffff; --fg:#0b1220; --muted:#6b7280; --accent:#111827; --accent-2:#374151; --glass:rgba(2,6,23,0.04);
       --radius:14px; --pad:18px; --maxw:1200px; --shadow: 0 10px 40px rgba(2,6,23,0.08);
     }
+
+/* Premium spacious layout adjustments */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 64px auto;
+  padding: 48px 32px;
+}
+
+header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--glass);
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav {
+  gap: 20px;
+}
+
+nav a, .nav a.btn, .nav button.btn {
+  font-size: 16px !important;
+  padding: 12px 20px !important;
+  border-radius: 8px;
+}
+
+.hero {
+  gap: 56px;
+  margin-top: 56px;
+}
+
+.hero-left h2 {
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.card {
+  padding: 36px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+.packs {
+  gap: 28px;
+  margin-top: 32px;
+}
+
+table th, table td {
+  padding: 18px 22px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 32px;
+}
+
+.membership-section {
+  padding: 60px 20px;
+}
+
+.membership-card {
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+.membership-card h3 {
+  font-size: 22px;
+}
+
+.membership-card .price {
+  font-size: 20px;
+}
+
+
+/* Professional spacing adjustments */
+.container {
+  max-width: var(--maxw);
+  margin: 48px auto;
+  padding: 32px 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--glass);
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+nav a, .nav a.btn, .nav button.btn {
+  font-size: 15px !important;
+  padding: 10px 18px !important;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 40px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 28px;
+}
+
+.packs {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+table th, table td {
+  padding: 16px 20px;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--glass);
+}
+
     [data-theme="dark"]{ --bg:#0b0f14; --fg:#f8fafc; --muted:#9aa4b2; --accent:#fff; --accent-2:#d1d5db; --glass:rgba(255,255,255,0.03); }
 
     *{box-sizing:border-box}
@@ -78,21 +220,1506 @@
 
     .glow:hover{box-shadow:0 8px 30px rgba(0,0,0,0.12)}
 
-  </style>
+  
+.book-call-btn {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: pulseBtn 2s infinite;
+}
+.book-call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+@keyframes pulseBtn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+#pack-select {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#pack-select option {
+  background: white;
+  color: #333;
+}
+#pack-select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+#pack-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,126,95,0.4);
+}
+
+#view-packs {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#view-packs:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+#start-order, 
+#view-packs, 
+.book-call-btn {
+  animation: pulseButton 2s infinite;
+}
+@keyframes pulseButton {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+#pack-select {
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#pack-select option {
+  background: white;
+  color: black;
+}
+#pack-select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+#pack-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102,166,255,0.4);
+}
+label[for="pack-select"] {
+  color: black !important;
+  font-weight: 600;
+  font-size: 21px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+/* General nav button styling */
+.nav .btn {
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.nav .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Emphasis buttons */
+.nav a.btn[href*="portfolio"] {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  color: white;
+  border: none;
+}
+
+#theme-toggle {
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  color: #333;
+  border: none;
+}
+#order-cta {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: white;
+  border: none;
+}
+
+/* Simpler styled buttons for Home, Services, About */
+.nav a.btn[href="#hero-section"],
+.nav a.btn[href="#bundles-section"],
+.nav a.btn[href="#membership-section"] {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.nav a.btn[href*="instagram.com"] {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.nav a.btn[href*="instagram.com"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.nav .btn, 
+.nav .primary {
+  min-height: 40px;
+  padding: 10px 16px !important;
+  font-size: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure all nav items look like buttons */
+.nav a.btn, .nav button.btn, .nav button.primary {
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.nav a.btn:hover, .nav button.btn:hover, .nav button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Emphasized buttons */
+.nav a.btn[href*="portfolio"] { color: black !important; }
+.nav a.btn[href*="instagram.com"] { color: black !important; },
+#theme-toggle,
+#order-cta {
+  color: white !important;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.nav a.btn[href*="portfolio"] {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+}
+.nav a.btn[href*="instagram.com"] {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+#theme-toggle {
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  color: #333 !important;
+}
+#order-cta {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+}
+
+/* Accordion Header Base */
+.acc-head {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+/* What We Do - teal fadeInLeft */
+.acc-head[data-acc="what"] {
+  background: #20c997;
+  color: white;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.acc-head[data-acc="what"]:hover {
+  transform: translateX(-50px) translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* How Charging Works - orange scale-up */
+.acc-head[data-acc="how"] {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #333;
+  transform: scale(0.8);
+  opacity: 0;
+}
+.acc-head[data-acc="how"]:hover {
+  transform: scale(0.82) translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Why Choose Us - deep blue fadeInUp */
+.acc-head[data-acc="why"] {
+  background: #0d47a1;
+  color: #fdd835;
+  transform: translateY(40px);
+  opacity: 0;
+}
+.acc-head[data-acc="why"]:hover {
+  transform: translateY(36px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Animation keyframes */
+.fadeInLeft { animation: fadeInLeft 1s forwards; }
+.fadeInScale { animation: fadeInScale 1s forwards; }
+.fadeInUp { animation: fadeInUp 1s forwards; }
+
+@keyframes fadeInLeft {
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeInScale {
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInUp {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* <span id="bundles-section"></span>Websites & Bundles Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+table thead {
+  background: #f7f7f7;
+}
+table th, table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table th {
+  font-size: 16px;
+  font-weight: 700;
+}
+table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+table tbody tr:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.01);
+  box-shadow: inset 0 0 0 rgba(0,0,0,0);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Align package names and improve hover effect */
+table th:first-child, 
+table td:first-child {
+  text-align: center;
+  font-weight: 700;
+}
+
+table tbody tr {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Equal height and alignment for pack cards */
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.pack-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  padding: 16px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pack-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.pack-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pack-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+.pack-price {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Perfect alignment for pack cards */
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.pack-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  padding: 16px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pack-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.pack-card-content {
+  flex-grow: 1;
+}
+.pack-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pack-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+.pack-price {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: auto;
+}
+
+/* Socials Container Items */
+.social-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+.social-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+.social-item img, .social-item svg {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+.social-item:hover img, .social-item:hover svg {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Platform specific background colors */
+.social-item.instagram:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+}
+.social-item.tiktok:hover {
+  background: linear-gradient(45deg, #69c9d0, #ee1d52, #010101);
+  color: white;
+}
+.social-item.email:hover {
+  background: linear-gradient(45deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  color: white;
+}
+
+/* Fade in animation */
+.fadeInSocial {
+  animation: fadeInUp 0.8s forwards;
+}
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Text-based socials animation */
+.text-social {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.text-social.animated {
+  animation: slideInLeft 0.6s forwards;
+}
+@keyframes slideInLeft {
+  to { opacity: 1; transform: translateX(0); }
+}
+.text-social:hover {
+  color: #ff9800;
+}
+.text-social span.emoji {
+  margin-right: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.text-social:hover span.emoji {
+  transform: translateY(-3px) scale(1.2);
+}
+
+/* Platform-specific hover colors */
+.text-social.instagram:hover { color: #e1306c; }
+.text-social.tiktok:hover { color: #69c9d0; }
+.text-social.email:hover { color: #4285f4; }
+
+/* Membership Section */
+
+.membership-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+.membership-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+  padding: 40px 20px;
+  background: #f9f9f9;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.membership-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.membership-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.membership-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.membership-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.membership-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.membership-card ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.membership-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.membership-card button:hover {
+  background: #0056b3;
+}
+
+/* Color themes */
+.membership-card.basic { border-top: 4px solid #20c997; }
+.membership-card.standard { border-top: 4px solid #17a2b8; }
+.membership-card.premium { border-top: 4px solid #6f42c1; }
+.membership-card.vip { border-top: 4px solid gold; }
+
+/* Bullet point styling for membership features */
+.membership-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.membership-card ul li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.membership-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.membership-card.basic ul li::before { color: #20c997; }
+.membership-card.standard ul li::before { color: #17a2b8; }
+.membership-card.premium ul li::before { color: #6f42c1; }
+.membership-card.vip ul li::before { color: gold; }
+
+.membership-card ul li:hover::before {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.promo-text-black {
+  color: black !important;
+}
+
+
+.nav-home {
+  background-color: #e0f0ff;
+  color: #005f99 !important;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.nav-home:hover {
+  background-color: #c2e0ff;
+  transform: translateY(-2px);
+}
+
+.nav-services {
+  background-color: #e6fff5;
+  color: #007a5e !important;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.nav-services:hover {
+  background-color: #c4ffe8;
+  transform: translateY(-2px);
+}
+
+.nav-about {
+  background-color: #fff5e6;
+  color: #996600 !important;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.nav-about:hover {
+  background-color: #ffe0b3;
+  transform: translateY(-2px);
+}
+
+/* Entrance animation for nav buttons */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav-home, .nav-services, .nav-about {
+  animation: fadeSlideIn 0.6s ease forwards;
+}
+.nav-services {
+  animation-delay: 0.2s;
+}
+.nav-about {
+  animation-delay: 0.4s;
+}
+
+/* Ripple effect for all buttons */
+button, .btn, a.button {
+  position: relative;
+  overflow: hidden;
+}
+button::after, .btn::after, a.button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.4);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+button:active::after, .btn:active::after, a.button:active::after {
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transition: 0s;
+}
+
+/* Social icon bounce & color pulse */
+.social-icon {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.05);
+  color: #ffcc00;
+}
+
+/* Section reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Star rating pop & glow */
+.star {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.star.clicked {
+  transform: scale(1.3);
+  color: gold;
+  text-shadow: 0 0 8px gold;
+}
+
+/* Parallax hero section (desktop only) */
+@media(min-width: 768px) {
+  .hero {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6600;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: bounceCTA 2s infinite;
+  z-index: 999;
+}
+@keyframes bounceCTA {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.floating-cta:hover {
+  background: #e65c00;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #ff6600;
+  width: 0%;
+  z-index: 1000;
+}
+
+/* Pulsing glow on key buttons */
+.pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 5px rgba(255,102,0,0.7); }
+  50% { box-shadow: 0 0 15px rgba(255,102,0,1); }
+}
+
+/* Typing effect */
+.typing {
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Section background change */
+.section-colored:nth-child(odd) {
+  background-color: #fafafa;
+  transition: background-color 0.5s ease;
+}
+.section-colored.active {
+  background-color: #f0f8ff;
+}
+
+/* Animated counters */
+.counter {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Testimonial carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.carousel-buttons {
+  margin-top: 10px;
+}
+.carousel-buttons button {
+  margin: 0 5px;
+}
+
+/* Make paragraph text bolder and more prominent */
+p, .lead, .card p, .membership-card ul li, .socials a {
+  font-weight: 500;
+  color: var(--fg);
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* Quick order dropdown dynamic designs */
+.pack-select-style-1 {
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.pack-select-style-2 {
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  color: #333;
+  font-weight: 600;
+  border: 2px solid #fcb69f;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.pack-select-style-3 {
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid gold;
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+
+/* Professional carousel navigation buttons */.carousel-buttons button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Enhanced professional carousel navigation buttons */
+.carousel-buttons button {
+  background: rgba(255, 255, 255, 0.98);
+  color: #111;
+  border: 2px solid #ddd;
+  padding: 14px 20px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+
+.carousel {
+  position: relative;
+  padding-bottom: 40px; /* ensure room for buttons if needed */
+}
+
+
+/* Testimonial text emphasis */
+.carousel-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5;
+}
+
+
+/* Position carousel buttons below the testimonial text */
+.carousel-buttons {
+  position: relative;
+  top: auto;
+  bottom: 0;
+  margin-top: 16px;
+  width: 100%;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+/* Premium classy testimonial section */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.carousel-item {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Premium testimonial visual polish */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(270deg, #fafafa, #f0f0f0, #fafafa);
+  background-size: 600% 600%;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  animation: gradientMove 10s ease infinite;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-item {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Full-page animated gradient background */
+body {
+  background: linear-gradient(270deg, #ffffff, #f7f7f7, #f0f0f0, #f7f7f7);
+  background-size: 800% 800%;
+  animation: bodyGradientMove 20s ease infinite;
+}
+
+@keyframes bodyGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Ratings section polish */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  animation: gradientMove 10s ease infinite;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent, #0073e6); /* branded color */
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.rating-stars {
+  margin-bottom: 20px;
+}
+
+.rating-stars span {
+  color: var(--accent, #0073e6);
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+
+/* Fully upgraded ratings section */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(247,247,247,0.95));
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: var(--accent, #0073e6);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.carousel-heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: var(--accent, #0073e6);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.carousel-item {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  padding: 30px 20px 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2px;
+  position: relative;
+  animation: fadeInSlide 0.6s ease;
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating-stars {
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: starsFadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes starsFadeIn {
+  to { opacity: 1; }
+}
+
+.rating-stars span {
+  color: var(--accent, #0073e6);
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Sleeker ratings section */
+.carousel {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: 18px;
+}
+
+.carousel-heading {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.carousel-item {
+  padding: 20px 15px;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.rating-stars {
+  margin-bottom: 10px;
+}
+
+.rating-stars span {
+  font-size: 18px;
+}
+
+
+/* Minimal sleek ratings section */
+.carousel {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.carousel-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent, #0073e6);
+}
+
+.carousel-item {
+  background: none;
+  border-radius: 0;
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  box-shadow: none;
+}
+
+.rating-stars {
+  margin-bottom: 6px;
+}
+
+.rating-stars span {
+  font-size: 16px;
+}
+
+
+/* Seasonal Banner Styles */
+#seasonal-banner {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  background-color: var(--accent, #0073e6);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: top 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#seasonal-banner.show {
+  top: 0;
+}
+
+#seasonal-banner button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+
+/* Slide-up animation for closing the seasonal banner */
+#seasonal-banner.hiding {
+  top: -50px;
+  transition: top 0.5s ease;
+}
+
+
+/* Enhanced close animation for seasonal banner */
+#seasonal-banner.hiding {
+  top: -50px;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: top 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
+}
+
+
+/* Center align rating stars in review items */
+.rating-stars {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+
+/* === Mobile-specific adjustments for iPhone & small screens === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr !important; /* stack hero text & image */
+    gap: 20px !important;
+  }
+
+  .packs {
+    grid-template-columns: 1fr !important; /* single column layout */
+  }
+
+  nav a, .nav .btn {
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+  }
+
+  .card, .membership-card {
+    padding: 16px !important;
+  }
+
+  img, video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  button, .btn {
+    width: 100% !important; /* easier tapping */
+  }
+
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+}
+
+
+/* What We Do - gray */
+.acc-head[data-acc="what"] {
+  background: gray !important;
+  color: white !important;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+/* How Charging Works - white */
+.acc-head[data-acc="how"] {
+  background: white !important;
+  color: black !important;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Why Choose Us - black */
+.acc-head[data-acc="why"] {
+  background: black !important;
+  color: white !important;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+
+/* Align and equalize pack cards */
+.packs {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.pack {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  padding: 14px !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--glass) !important;
+  background: linear-gradient(180deg, transparent, var(--glass)) !important;
+}
+
+.pack h3, .pack p, .pack .price {
+  margin: 0 !important;
+}
+
+.pack .price {
+  margin-top: auto !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  color: var(--fg) !important;
+}
+
+</style>
+<style>
+    #seasonal-banner strong {
+        color: #ffcc00;
+    }
+    </style>
+
+<!-- Big Pack Card Text CSS - injected by ChatGPT -->
+<style>
+/* High-specificity rules to enlarge pack titles, subtitles, and prices */
+.packs .pack > div[style*="display:flex"] > div > div:first-child,
+.packs .pack > div > div > div:first-child {
+  font-size: 1.6rem !important;
+  font-weight: 800 !important;
+  line-height: 1.08 !important;
+}
+
+.packs .pack > div[style*="display:flex"] > div > div:nth-child(2),
+.packs .pack > div > div > div:nth-child(2) {
+  font-size: 1.05rem !important;
+  color: var(--muted) !important;
+  margin-top: 6px;
+}
+
+.packs .pack > div .price {
+  font-size: 1.6rem !important;
+  font-weight: 900 !important;
+  color: #e53935 !important;
+}
+
+/* Ensure layout keeps balance on small screens */
+@media (max-width: 768px) {
+  .packs .pack > div[style*="display:flex"] {
+    gap: 8px;
+  }
+  .packs .pack > div[style*="display:flex"] > div > div:first-child {
+    font-size: 1.4rem !important;
+  }
+  .packs .pack > div .price {
+    font-size: 1.35rem !important;
+  }
+}
+</style>
+<!-- End injected CSS -->
+
 </head>
 <body data-theme="light">
-
+<div id="seasonal-banner">
+<span id="seasonal-text"></span>
+<button id="close-banner">×</button>
+</div>
 <!-- Mobile View Sticky Banner with Close Button + Permanent Memory + Animation -->
 <div class="mobile-banner" id="mobileBanner">
   💻 Best viewed on <strong>desktop</strong> for the full experience
   <span class="close-banner" onclick="closeBanner()">✖</span>
 </div>
-
 <style>
 .mobile-banner {
   background-color: #ff6b35; /* Vibrant orange */
   color: #fff;
-  font-size: 16px; /* Larger font */
+  font-size: 21px; /* Larger font */
   font-weight: 500;
   text-align: center;
   padding: 10px 35px 10px 14px;
@@ -130,12 +1757,566 @@
     display: none;
   }
 }
-</style>
 
+/* Make paragraph text bolder and more prominent */
+p, .lead, .card p, .membership-card ul li, .socials a {
+  font-weight: 500;
+  color: var(--fg);
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* Quick order dropdown dynamic designs */
+.pack-select-style-1 {
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.pack-select-style-2 {
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  color: #333;
+  font-weight: 600;
+  border: 2px solid #fcb69f;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.pack-select-style-3 {
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid gold;
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+
+/* Professional carousel navigation buttons */.carousel-buttons button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Enhanced professional carousel navigation buttons */
+.carousel-buttons button {
+  background: rgba(255, 255, 255, 0.98);
+  color: #111;
+  border: 2px solid #ddd;
+  padding: 14px 20px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+
+.carousel {
+  position: relative;
+  padding-bottom: 40px; /* ensure room for buttons if needed */
+}
+
+
+/* Testimonial text emphasis */
+.carousel-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5;
+}
+
+
+/* Position carousel buttons below the testimonial text */
+.carousel-buttons {
+  position: relative;
+  top: auto;
+  bottom: 0;
+  margin-top: 16px;
+  width: 100%;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+/* Premium classy testimonial section */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.carousel-item {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Premium testimonial visual polish */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(270deg, #fafafa, #f0f0f0, #fafafa);
+  background-size: 600% 600%;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  animation: gradientMove 10s ease infinite;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-item {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Full-page animated gradient background */
+body {
+  background: linear-gradient(270deg, #ffffff, #f7f7f7, #f0f0f0, #f7f7f7);
+  background-size: 800% 800%;
+  animation: bodyGradientMove 20s ease infinite;
+}
+
+@keyframes bodyGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Ratings section polish */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  animation: gradientMove 10s ease infinite;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent, #0073e6); /* branded color */
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.rating-stars {
+  margin-bottom: 20px;
+}
+
+.rating-stars span {
+  color: var(--accent, #0073e6);
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+
+/* Fully upgraded ratings section */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(247,247,247,0.95));
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: var(--accent, #0073e6);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.carousel-heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: var(--accent, #0073e6);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.carousel-item {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  padding: 30px 20px 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2px;
+  position: relative;
+  animation: fadeInSlide 0.6s ease;
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating-stars {
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: starsFadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes starsFadeIn {
+  to { opacity: 1; }
+}
+
+.rating-stars span {
+  color: var(--accent, #0073e6);
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Sleeker ratings section */
+.carousel {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: 18px;
+}
+
+.carousel-heading {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.carousel-item {
+  padding: 20px 15px;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.rating-stars {
+  margin-bottom: 10px;
+}
+
+.rating-stars span {
+  font-size: 18px;
+}
+
+
+/* Minimal sleek ratings section */
+.carousel {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.carousel-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent, #0073e6);
+}
+
+.carousel-item {
+  background: none;
+  border-radius: 0;
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  box-shadow: none;
+}
+
+.rating-stars {
+  margin-bottom: 6px;
+}
+
+.rating-stars span {
+  font-size: 16px;
+}
+
+
+/* Seasonal Banner Styles */
+#seasonal-banner {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  background-color: var(--accent, #0073e6);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: top 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#seasonal-banner.show {
+  top: 0;
+}
+
+#seasonal-banner button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+
+/* Slide-up animation for closing the seasonal banner */
+#seasonal-banner.hiding {
+  top: -50px;
+  transition: top 0.5s ease;
+}
+
+
+/* Enhanced close animation for seasonal banner */
+#seasonal-banner.hiding {
+  top: -50px;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: top 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
+}
+
+
+/* Center align rating stars in review items */
+.rating-stars {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+</style>
 <script>
 // Hide banner if previously closed
 if (localStorage.getItem('bannerClosed') === 'true') {
   document.addEventListener("DOMContentLoaded", () => {
+
+  let ratings = JSON.parse(localStorage.getItem('allRatings') || "[]");
+  if(ratings.length === 0){
+    // Seed with 50 ratings averaging ~4.2
+    ratings = Array(50).fill(4); // seed with value 4 for simplicity
+    localStorage.setItem('allRatings', JSON.stringify(ratings));
+    localStorage.setItem('ratingCount', ratings.length);
+  }
+  let avg = (ratings.reduce((a,b)=>a+b,0) / ratings.length).toFixed(1);
+  document.getElementById('avgRatingValue').textContent = avg;
+  document.getElementById('ratingCount').textContent = ratings.length;
+
+
+  let existingRatings = JSON.parse(localStorage.getItem('allRatings') || "[]");
+  if(existingRatings.length > 0){
+    let avg = (existingRatings.reduce((a,b)=>a+b,0) / existingRatings.length).toFixed(1);
+    document.getElementById('avgRatingValue').textContent = avg;
+    document.getElementById('averageRating').style.display = 'block';
+  }
+
     document.getElementById('mobileBanner').style.display = 'none';
   });
 }
@@ -145,224 +2326,353 @@ function closeBanner() {
   localStorage.setItem('bannerClosed', 'true');
 }
 </script>
+<div class="container">
+<!-- ================= HEADER (Logo, Navigation, Seasonal Banner) ================= -->
+<header>
+<div class="brand">
+<div class="logo">AHC</div>
+<div>
+<h1>AHC Agency</h1>
+<div style="color:var(--muted);font-size:13px">Video Promotion · Websites · Growth Bundles</div>
+</div>
+</div>
+<div class="nav">
 
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">AHC</div>
-        <div>
-          <h1>AHC Agency</h1>
-          <div style="color:var(--muted);font-size:13px">Video Promotion · Websites · Growth Bundles</div>
-        </div>
-      </div>
+<!-- Discount Button -->
+<button class="btn playful-discount-btn" id="discount-btn">🎁 Discounts</button>
 
-      <div class="nav">
-        <a href="https://tinyurl.com/ahc-agency-portfolio" class="btn" target="_blank" rel="noopener noreferrer">Portfolio</a>
-        <a href="#home" class="btn">Home</a>
-        <a href="#services" class="btn">Services</a>
-        <a href="#about" class="btn">About</a>
-        <a href="#contact" class="btn">Contact</a>
-        <button class="btn" id="theme-toggle" aria-pressed="false" title="Toggle theme">Toggle Theme</button>
-        <button class="primary" id="order-cta">Order Now</button>
-      </div>
-    </header>
 
-    <main id="home" class="hero">
-      <section class="hero-left">
-        <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <div>
-              <div style="font-size:13px;color:var(--muted);font-weight:700">AHC • Creative Growth</div>
-              <h2 id="hero-head">We turn views into customers — fast.</h2>
-              <p class="lead">Beautiful websites + targeted promotion across Instagram & TikTok. Simple pricing, fast delivery, predictable reach. Scale with packs or custom campaigns.</p>
-            </div>
-            <div style="text-align:right">
-              <div style="font-weight:800;font-size:20px;color:var(--muted)">@ahc_agency</div>
-              <div style="color:var(--muted);font-size:12px">TikTok · Instagram</div>
-            </div>
-          </div>
+<!-- Discount Popup -->
+<div id="discount-popup" class="discount-popup">
+  <div class="discount-popup-content">
+    <span class="discount-popup-close" id="discount-popup-close">&times;</span>
+    <h2>🎉 Get a Special Discount!</h2>
+    <p>Give us a new business name idea 💡 or leave us a LinkedIn rating ⭐ and enjoy <strong>20% OFF</strong> your next order!</p>
 
-          <div style="height:14px"></div>
-          <div class="cta-row">
-            <button class="primary pulse" id="start-order">Start a Project</button>
-            <button class="btn" id="view-packs">View Packs</button>
-          </div>
-
-          <div class="packs" style="margin-top:18px">
-            <div class="pack">
-              <div style="display:flex;justify-content:space-between;align-items:center">
-                <div>
-                  <div style="font-weight:700">Starter Reach Pack</div>
-                  <div style="color:var(--muted);font-size:13px">3 videos</div>
-                </div>
-                <div class="price">€15</div>
-              </div>
-            </div>
-            <div class="pack">
-              <div style="display:flex;justify-content:space-between;align-items:center">
-                <div>
-                  <div style="font-weight:700">Influence Builder</div>
-                  <div style="color:var(--muted);font-size:13px">5 videos</div>
-                </div>
-                <div class="price">€25</div>
-              </div>
-            </div>
-            <div class="pack">
-              <div style="display:flex;justify-content:space-between;align-items:center">
-                <div>
-                  <div style="font-weight:700">Viral Boost Pack</div>
-                  <div style="color:var(--muted);font-size:13px">8 videos</div>
-                </div>
-                <div class="price">€40</div>
-              </div>
-            </div>
-            <div class="pack">
-              <div style="display:flex;justify-content:space-between;align-items:center">
-                <div>
-                  <div style="font-weight:700">Custom Promo Order</div>
-                  <div style="color:var(--muted);font-size:13px">Flexible</div>
-                </div>
-                <div class="price">Varies</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div style="height:18px"></div>
-
-        <div class="card" id="services">
-          <h3 style="margin:0 0 8px 0">Website & Bundles</h3>
-          <div style="color:var(--muted);font-size:14px">From landing pages to custom shops — designed for conversion.</div>
-
-          <table aria-labelledby="services">
-            <thead><tr><th>Service</th><th>Includes</th><th>Price (€)</th></tr></thead>
-            <tbody>
-              <tr><td>Starter Website</td><td>1-page</td><td>€50</td></tr>
-              <tr><td>Launch Pack</td><td>1-page + 1 video</td><td>€55</td></tr>
-              <tr><td>Business Website</td><td>3-page</td><td>€75</td></tr>
-              <tr><td>Starter Biz Bundle</td><td>3-page + 3 videos</td><td>€85</td></tr>
-              <tr><td>Go Viral Bundle</td><td>3-page + 8 videos</td><td>€110</td></tr>
-              <tr><td>Custom Web Project</td><td>Advanced</td><td>From €100</td></tr>
-            </tbody>
-          </table>
-
-          <div class="accordion" style="margin-top:12px">
-            <div class="acc-item">
-              <div class="acc-head" data-acc="what">What we do <span>+</span></div>
-              <div class="acc-body">We create short-form video content, run it across our owned Instagram & TikTok channels, design landing pages and multi-page sites, and provide simple analytics so you can track reach.</div>
-            </div>
-            <div class="acc-item">
-              <div class="acc-head" data-acc="how">How charging works <span>+</span></div>
-              <div class="acc-body">Fixed-price packs for promotional runs; web-only and bundle pricing. Custom campaigns quoted per scope. Transparent pricing so you can plan growth by cost per 1,000 views.</div>
-            </div>
-            <div class="acc-item">
-              <div class="acc-head" data-acc="why">Why choose us <span>+</span></div>
-              <div class="acc-body">We combine creative assets + owned distribution to deliver reach fast. Simple packages, fast turnaround, and clear reporting.</div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <aside>
-        <div class="card" id="about">
-          <h3 style="margin-top:0">About AHC</h3>
-          <p style="color:var(--muted);margin:8px 0">We are a small creative team focused on making attention-grabbing short-form content and conversion-first websites for up-and-coming businesses. We run promotion across multiple IG & TikTok accounts.</p>
-          <div style="display:flex;gap:10px;align-items:center;margin-top:12px">
-            <div style="font-weight:800;font-size:28px">3</div>
-            <div style="color:var(--muted)">Instagram accounts</div>
-          </div>
-          <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
-            <div style="font-weight:800;font-size:28px">3</div>
-            <div style="color:var(--muted)">TikTok accounts</div>
-          </div>
-
-          <div style="height:12px"></div>
-
-          <div class="card" style="padding:12px;margin-top:10px">
-            <h4 style="margin:0 0 8px 0">Quick order</h4>
-            <label for="pack-select" style="color:var(--muted);font-size:13px">Choose a pack</label>
-            <select id="pack-select">
-              <option value="Starter Reach Pack">Starter Reach Pack — €15</option>
-              <option value="Influence Builder">Influence Builder — €25</option>
-              <option value="Viral Boost Pack">Viral Boost Pack — €40</option>
-              <option value="Starter Website">Starter Website — €50</option>
-              <option value="Go Viral Bundle">Go Viral Bundle — €110</option>
-              <option value="Custom">Custom — Contact for price</option>
-            </select>
-            <div style="height:10px"></div>
-            <button class="primary" id="email-order">Start order by email</button>
-          </div>
-
-          <div style="height:12px"></div>
-
-          <div class="card" style="padding:12px;">
-            <h4 style="margin:0 0 8px 0">Socials</h4>
-            <div class="socials">
-              <a href="https://www.instagram.com/ahc_agency/" target="_blank" rel="noopener noreferrer">📷 Instagram — @ahc_agency</a>
-              <a href="https://www.tiktok.com/@ahc_agency?lang=en" target="_blank" rel="noopener noreferrer">🎵 TikTok — @ahc_agency</a>
-              <a href="mailto:ahcagency.media@gmail.com">📧 Email — ahcagency.media@gmail.com</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div style="height:14px"></div>
-
-        <div class="card" id="contact">
-          <h3 style="margin-top:0">Contact</h3>
-          <form id="contact-form">
-            <input type="text" id="name" placeholder="Your name*" required />
-            <input type="email" id="email" placeholder="Your email*" required />
-            <select id="service">
-              <option value="Starter Reach Pack">Starter Reach Pack — €15</option>
-              <option value="Influence Builder">Influence Builder — €25</option>
-              <option value="Viral Boost Pack">Viral Boost Pack — €40</option>
-              <option value="Starter Website">Starter Website — €50</option>
-              <option value="Go Viral Bundle">Go Viral Bundle — €110</option>
-              <option value="Custom">Custom</option>
-            </select>
-            <textarea id="message" rows="4" placeholder="Tell us about your business & goals"></textarea>
-            <div style="display:flex;gap:8px">
-              <button type="submit" class="primary">Send</button>
-              <button type="button" class="btn" id="mailto-fallback">Email instead</button>
-            </div>
-            <div id="form-result" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
-          </form>
-        </div>
-
-      </aside>
-    </main>
-
-    <footer>
-      <div>© AHC Agency • Built for fast growth • Replace placeholders if needed</div>
     
-<div id="rating-section" style="margin-top:30px;text-align:center;">
-  <h3 style="margin-bottom:8px;">Customer Ratings</h3>
-  <div id="average-rating" style="font-size:20px;color:var(--fg);font-weight:700;">Loading rating...</div>
-  <button id="open-rating-modal" class="btn" style="margin-top:10px;">Leave a Rating</button>
+<form id="discount-form">
+  <input type="text" name="from_name" placeholder="Your name" required>
+  <input type="email" name="from_email" placeholder="Your email address" required>
+  <textarea name="message" placeholder="Type your business name idea or feedback..." rows="4" required></textarea>
+  <button type="submit" class="btn submit-discount">Submit</button>
+</form>
+
+  </div>
 </div>
 
+
+<style>
+.playful-discount-btn {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.playful-discount-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.discount-popup {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  animation: fadeIn 0.3s ease;
+}
+
+.discount-popup-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 14px;
+  max-width: 400px;
+  text-align: center;
+  animation: popUp 0.4s ease;
+}
+
+.discount-popup-close {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+@keyframes popUp {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const discountBtn = document.getElementById("discount-btn");
+  const discountPopup = document.getElementById("discount-popup");
+  const discountClose = document.getElementById("discount-popup-close");
+
+  discountBtn.addEventListener("click", () => {
+    discountPopup.style.display = "block";
+  });
+
+  discountClose.addEventListener("click", () => {
+    discountPopup.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === discountPopup) {
+      discountPopup.style.display = "none";
+    }
+  });
+});
+</script>
+
+<a class="btn" href="https://tinyurl.com/ahc-agency-portfolio" rel="noopener noreferrer" target="_blank">Portfolio</a>
+<a class="nav-home btn home-btn" href="#hero-section">Home</a>
+<a class="nav-services btn services-btn" href="#bundles-section">Services</a>
+<a class="nav-about btn about-btn" href="#membership-section">About</a>
+<a class="btn" href="https://www.instagram.com/ahc_agency/" target="_blank">Contact</a>
+<button aria-pressed="false" class="btn" id="theme-toggle" title="Toggle theme">Toggle Theme</button>
+<button class="primary" id="order-cta">Order Now</button>
+</div>
+</header>
+<!-- ================= HERO SECTION WITH TYPING EFFECT ================= -->
+<main class="hero" id="hero-section">
+<section class="hero-left">
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<div style="font-size:13px;color:var(--muted);font-weight:700">AHC • Tailored Advertisement</div>
+<h2 id="hero-head">We turn views into customers — fast.</h2>
+<p class="lead">Beautiful websites + targeted promotion across Instagram &amp; TikTok. Simple pricing, fast delivery, predictable reach. Scale with packs or custom campaigns.</p>
+</div>
+</div>
+<div style="height:14px"></div>
+<div class="cta-row">
+<button class="primary pulse" id="start-order">Start a Project</button>
+<button class="btn" id="view-packs">View Packs</button>
+<button class="book-call-btn" onclick="window.open('https://calendly.com/ahcagency-media/30min', '_blank')">📞 Book a Call</button>
+</div>
+<div class="packs" style="margin-top:18px">
+<div class="pack">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<div style="font-weight:700">Starter Reach Pack</div>
+<div style="color:var(--muted);font-size:13px">3 videos</div>
+</div>
+<div class="price">€15</div>
+</div>
+</div>
+<div class="pack">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<div style="font-weight:700">Influence Builder</div>
+<div style="color:var(--muted);font-size:13px">5 videos</div>
+</div>
+<div class="price">€25</div>
+</div>
+</div>
+<div class="pack">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<div style="font-weight:700">Viral Boost Pack</div>
+<div style="color:var(--muted);font-size:13px">8 videos</div>
+</div>
+<div class="price">€40</div>
+</div>
+</div>
+<div class="pack">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<div style="font-weight:700">Custom Promo Order</div>
+<div style="color:var(--muted);font-size:13px">Flexible</div>
+</div>
+<div class="price">Varies</div>
+</div>
+</div>
+</div>
+</div>
+<div style="height:18px"></div>
+<div class="card" id="bundles-section">
+<h3 style="margin:0 0 8px 0">Website &amp; Bundles</h3>
+<div style="color:var(--muted);font-size:14px">From landing pages to custom shops — designed for conversion.</div>
+<table aria-labelledby="services">
+<thead><tr><th>Service</th><th>Includes</th><th>Price (€)</th></tr></thead>
+<tbody>
+<tr><td>Starter Website</td><td>1-page</td><td>€50</td></tr>
+<tr><td>Launch Pack</td><td>1-page + 1 video</td><td>€55</td></tr>
+<tr><td>Business Website</td><td>3-page</td><td>€75</td></tr>
+<tr><td>Starter Biz Bundle</td><td>3-page + 3 videos</td><td>€85</td></tr>
+<tr><td>Go Viral Bundle</td><td>3-page + 8 videos</td><td>€110</td></tr>
+<tr><td>Custom Web Project</td><td>Advanced</td><td>From €100</td></tr>
+</tbody>
+</table>
+<div class="accordion" style="margin-top:12px">
+<div class="acc-item">
+<div class="acc-head" data-acc="what">What we do <span>+</span></div>
+<div class="acc-body">We create short-form video content, run it across our owned Instagram &amp; TikTok channels, design landing pages and multi-page sites, and provide simple analytics so you can track reach.</div>
+</div>
+<div class="acc-item">
+<div class="acc-head" data-acc="how">How charging works <span>+</span></div>
+<div class="acc-body">Fixed-price packs for promotional runs; web-only and bundle pricing. Custom campaigns quoted per scope. Transparent pricing so you can plan growth by cost per 1,000 views.</div>
+</div>
+<div class="acc-item">
+<div class="acc-head" data-acc="why">Why choose us <span>+</span></div>
+<div class="acc-body">We combine creative assets + owned distribution to deliver reach fast. Simple packages, fast turnaround, and clear reporting.</div>
+</div>
+</div>
+</div>
+</section>
+<aside>
+<div class="card" id="about">
+<h3 style="margin-top:0">About AHC</h3>
+<div id="averageRating" style="font-size:14px; font-weight:500; color:var(--fg);"> <span id="ratingCount">50+</span> Ratings: <span id="avgRatingValue">4.2</span> ★</div>
+<p style="color:var(--muted);margin:8px 0">We are a small creative team focused on making attention-grabbing short-form content and conversion-first websites for up-and-coming businesses. We run promotion across multiple IG &amp; TikTok accounts.</p>
+<div style="display:flex;gap:10px;align-items:center;margin-top:12px">
+<div style="font-weight:800;font-size:28px">3</div>
+<div style="color:var(--muted)">Instagram accounts</div>
+</div>
+<div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+<div style="font-weight:800;font-size:28px">3</div>
+<div style="color:var(--muted)">TikTok accounts</div>
+</div>
+<div style="height:12px"></div>
+<div class="card" style="padding:12px;margin-top:10px">
+<h4 style="margin:0 0 8px 0">Quick order</h4>
+<label for="pack-select" style="color:var(--muted);font-size:13px">Choose a pack</label>
+<select id="pack-select">
+<option value="Starter Reach Pack">Starter Reach Pack — €15</option>
+<option value="Influence Builder">Influence Builder — €25</option>
+<option value="Viral Boost Pack">Viral Boost Pack — €40</option>
+<option value="Starter Website">Starter Website — €50</option>
+<option value="Go Viral Bundle">Go Viral Bundle — €110</option>
+<option value="Custom">Custom — Contact for price</option>
+<option value="basic-plan">Basic Membership Plan</option>
+<option value="standard-plan">Standard Membership Plan</option>
+<option value="premium-plan">Premium Membership Plan</option>
+<option value="vip-plan">VIP Membership Plan</option>
+</select>
+<div style="height:10px"></div>
+<button class="primary" id="email-order">Start order by email</button>
+</div>
+<div style="height:12px"></div>
+<div class="card" style="padding:12px;">
+<h4 style="margin:0 0 8px 0">Socials</h4>
+<div class="socials">
+<a href="https://www.instagram.com/ahc_agency/" rel="noopener noreferrer" target="_blank">📷 Instagram — @ahc_agency</a>
+<a href="https://www.tiktok.com/@ahc_agency?lang=en" rel="noopener noreferrer" target="_blank">🎵 TikTok — @ahc_agency</a>
+<a href="mailto:ahcagency.media@gmail.com">📧 Email — ahcagency.media@gmail.com</a>
+</div>
+</div>
+</div>
+<div style="height:14px"></div>
+<div class="card" id="contact">
+<h3 style="margin-top:0">Contact</h3>
+<form id="contact-form">
+<input id="name" placeholder="Your name*" required="" type="text"/>
+<input id="email" placeholder="Your email*" required="" type="email"/>
+<select id="service">
+<option value="Starter Reach Pack">Starter Reach Pack — €15</option>
+<option value="Influence Builder">Influence Builder — €25</option>
+<option value="Viral Boost Pack">Viral Boost Pack — €40</option>
+<option value="Starter Website">Starter Website — €50</option>
+<option value="Go Viral Bundle">Go Viral Bundle — €110</option>
+<option value="Custom">Custom</option>
+</select>
+<textarea id="message" placeholder="Tell us about your business &amp; goals" rows="4"></textarea>
+<div style="display:flex;gap:8px">
+<button class="primary" type="submit">Send</button>
+<button class="btn" id="mailto-fallback" type="button">Email instead</button>
+</div>
+<div id="form-result" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
+</form>
+</div>
+</aside>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer>
+<div><section class="membership-section" id="membership-section">
+<div class="membership-card basic">
+<h3>Basic Plan</h3>
+<div class="price">€29/mo or €290/year</div>
+<ul>
+<li>3-page business website</li>
+<li>Mobile-friendly &amp; SEO-ready</li>
+<li>Basic animations</li>
+<li>Email support (24–48h)</li>
+</ul>
+<button onclick="window.location.href='https://www.instagram.com/ahc_agency/'">Get Started</button>
+</div>
+<div class="membership-card standard">
+<h3>Standard Plan</h3>
+<div class="price">€59/mo or €590/year</div>
+<ul>
+<li>5–7 page website</li>
+<li>Advanced animations</li>
+<li>Blog/news section</li>
+<li>Analytics dashboard</li>
+<li>Priority email support (12–24h)</li>
+</ul>
+<button onclick="window.location.href='https://www.instagram.com/ahc_agency/'">Get Started</button>
+</div>
+<div class="membership-card premium">
+<h3>Premium Plan</h3>
+<div class="price">€99/mo or €990/year</div>
+<ul>
+<li>Custom graphics &amp; illustrations</li>
+<li>Marketing integrations</li>
+<li>Social media branding kit</li>
+<li>Monthly site updates</li>
+<li>Priority chat support (8h)</li>
+</ul>
+<button onclick="window.location.href='https://www.instagram.com/ahc_agency/'">Get Started</button>
+</div>
+<div class="membership-card vip">
+<h3>VIP Plan</h3>
+<div class="price">€199/mo or €1990/year</div>
+<ul>
+<li>Fast delivery (3–7 days)</li>
+<li>Day-to-day collaboration</li>
+<li>Unlimited design requests</li>
+<li>Weekly performance reports</li>
+<li>Exclusive beta tools access</li>
+</ul>
+<button onclick="window.location.href='https://www.instagram.com/ahc_agency/'">Get Started</button>
+</div>
+</section>
+<div class="carousel reveal">
+<div class="carousel-heading">Client Ratings &amp; Feedback</div>
+<div class="carousel-track">
+<div class="carousel-item"><div class="rating-stars">★★★★★</div>"AHC boosted our sales by 300% in just 2 weeks!" — Sarah Mitchell</div>
+<div class="carousel-item"><div class="rating-stars">★★★★★</div>"Incredible service and ROI. Highly recommended." — James Carter</div>
+<div class="carousel-item"><div class="rating-stars">★★★★★</div>"Professional, fast, and effective campaigns!" — Emily Rodriguez</div>
+</div>
+<div class="carousel-buttons">
+<button id="prevBtn">Prev</button>
+<button id="nextBtn">Next</button>
+</div>
+</div>
+
+© AHC Agency • Built for fast growth • Replace placeholders if needed</div>
 <!-- Rating Modal -->
-<div id="rating-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;">
-  <div style="background:var(--bg);padding:20px;border-radius:12px;max-width:400px;width:90%;box-shadow:var(--shadow);">
-    <h3>Leave a Rating</h3>
-    <div id="star-container" style="font-size:28px;cursor:pointer;margin-bottom:10px;">★★★★★</div>
-    <textarea id="rating-comment" placeholder="Your feedback..." style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--glass);background:transparent;color:var(--fg);"></textarea>
-    <div style="margin-top:12px;display:flex;justify-content:space-between;">
-      <button id="submit-rating" class="primary">Submit</button>
-      <button id="close-rating-modal" class="btn">Cancel</button>
-    </div>
-  </div>
-</div>
-
 </footer>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
     // Ensure DOM content loaded before binding everything
     document.addEventListener('DOMContentLoaded', function () {
       // Elements
@@ -393,7 +2703,7 @@ function closeBanner() {
       if (orderCta) orderCta.addEventListener('click', () => {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
       });
-      if (startOrder) startOrder.addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
+      if (startOrder) startOrder.addEventListener('click', () => { window.open("https://www.instagram.com/ahc_agency/", "_blank"); });
       if (viewPacks) viewPacks.addEventListener('click', () => document.getElementById('services').scrollIntoView({ behavior: 'smooth' }));
 
       // Prefill order email button in aside
@@ -482,50 +2792,1468 @@ Thanks.
       console.info('AHC site loaded — social links and email set.');
     });
   </script>
+<style>
+.rating-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99999;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+.rating-stars {
+  font-size: 38px;
+  display: flex;
+  gap: 6px;
+}
+.rating-stars span {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s, transform 0.2s;
+}
+.rating-stars span.hover,
+.rating-stars span.selected {
+  color: gold;
+}
+.rating-stars span.selected {
+  transform: scale(1.2);
+}
+.close-rating {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+}
 
+/* Make paragraph text bolder and more prominent */
+p, .lead, .card p, .membership-card ul li, .socials a {
+  font-weight: 500;
+  color: var(--fg);
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* Quick order dropdown dynamic designs */
+.pack-select-style-1 {
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.pack-select-style-2 {
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  color: #333;
+  font-weight: 600;
+  border: 2px solid #fcb69f;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.pack-select-style-3 {
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid gold;
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+
+/* Professional carousel navigation buttons */.carousel-buttons button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Enhanced professional carousel navigation buttons */
+.carousel-buttons button {
+  background: rgba(255, 255, 255, 0.98);
+  color: #111;
+  border: 2px solid #ddd;
+  padding: 14px 20px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+
+.carousel {
+  position: relative;
+  padding-bottom: 40px; /* ensure room for buttons if needed */
+}
+
+
+/* Testimonial text emphasis */
+.carousel-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5;
+}
+
+
+/* Position carousel buttons below the testimonial text */
+.carousel-buttons {
+  position: relative;
+  top: auto;
+  bottom: 0;
+  margin-top: 16px;
+  width: 100%;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+/* Premium classy testimonial section */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.carousel-item {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Premium testimonial visual polish */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(270deg, #fafafa, #f0f0f0, #fafafa);
+  background-size: 600% 600%;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  animation: gradientMove 10s ease infinite;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-item {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Full-page animated gradient background */
+body {
+  background: linear-gradient(270deg, #ffffff, #f7f7f7, #f0f0f0, #f7f7f7);
+  background-size: 800% 800%;
+  animation: bodyGradientMove 20s ease infinite;
+}
+
+@keyframes bodyGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Ratings section polish */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  animation: gradientMove 10s ease infinite;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent, #0073e6); /* branded color */
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.rating-stars {
+  margin-bottom: 20px;
+}
+
+.rating-stars span {
+  color: var(--accent, #0073e6);
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+
+/* Fully upgraded ratings section */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(247,247,247,0.95));
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: var(--accent, #0073e6);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.carousel-heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: var(--accent, #0073e6);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.carousel-item {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  padding: 30px 20px 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2px;
+  position: relative;
+  animation: fadeInSlide 0.6s ease;
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating-stars {
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: starsFadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes starsFadeIn {
+  to { opacity: 1; }
+}
+
+.rating-stars span {
+  color: var(--accent, #0073e6);
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+.carousel-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background: #f9f9f9;
+  border-color: #aaa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+/* Sleeker ratings section */
+.carousel {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: 18px;
+}
+
+.carousel-heading {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.carousel-item {
+  padding: 20px 15px;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.rating-stars {
+  margin-bottom: 10px;
+}
+
+.rating-stars span {
+  font-size: 18px;
+}
+
+
+/* Minimal sleek ratings section */
+.carousel {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.carousel-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent, #0073e6);
+}
+
+.carousel-item {
+  background: none;
+  border-radius: 0;
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  box-shadow: none;
+}
+
+.rating-stars {
+  margin-bottom: 6px;
+}
+
+.rating-stars span {
+  font-size: 16px;
+}
+
+
+/* Seasonal Banner Styles */
+#seasonal-banner {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  background-color: var(--accent, #0073e6);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: top 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#seasonal-banner.show {
+  top: 0;
+}
+
+#seasonal-banner button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+
+/* Slide-up animation for closing the seasonal banner */
+#seasonal-banner.hiding {
+  top: -50px;
+  transition: top 0.5s ease;
+}
+
+
+/* Enhanced close animation for seasonal banner */
+#seasonal-banner.hiding {
+  top: -50px;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: top 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
+}
+
+
+/* Center align rating stars in review items */
+.rating-stars {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+</style>
+<div class="rating-popup" id="ratingPopup">
+<span class="close-rating" onclick="closeRatingPopup()">✖</span>
+<div style="font-size:18px;font-weight:600;margin-bottom:8px;">Rate us!</div>
+<div class="rating-stars" id="ratingStars">
+<span data-value="1">★</span>
+<span data-value="2">★</span>
+<span data-value="3">★</span>
+<span data-value="4">★</span>
+<span data-value="5">★</span>
+</div>
+</div>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const modal = document.getElementById('rating-modal');
-  const openBtn = document.getElementById('open-rating-modal');
-  const closeBtn = document.getElementById('close-rating-modal');
-  const starContainer = document.getElementById('star-container');
-  const submitBtn = document.getElementById('submit-rating');
-  const avgDisplay = document.getElementById('average-rating');
-  let selectedRating = 5;
+function closeRatingPopup() {
+  gsap.to("#ratingPopup", { opacity: 0, scale: 0.8, duration: 0.4, onComplete: () => {
+    document.getElementById('ratingPopup').style.display = 'none';
+  }});
+  localStorage.setItem('ratingClosed', 'true');
+}
 
-  function fetchAverage() {
-    fetch('/ratings')
-      .then(res => res.json())
-      .then(data => {
-        avgDisplay.textContent = data.average ? `Average: ${data.average.toFixed(1)} ★` : "No ratings yet";
-      });
+document.addEventListener("DOMContentLoaded", () => {
+
+  let ratings = JSON.parse(localStorage.getItem('allRatings') || "[]");
+  if(ratings.length === 0){
+    // Seed with 50 ratings averaging ~4.2
+    ratings = Array(50).fill(4); // seed with value 4 for simplicity
+    localStorage.setItem('allRatings', JSON.stringify(ratings));
+    localStorage.setItem('ratingCount', ratings.length);
+  }
+  let avg = (ratings.reduce((a,b)=>a+b,0) / ratings.length).toFixed(1);
+  document.getElementById('avgRatingValue').textContent = avg;
+  document.getElementById('ratingCount').textContent = ratings.length;
+
+
+  let existingRatings = JSON.parse(localStorage.getItem('allRatings') || "[]");
+  if(existingRatings.length > 0){
+    let avg = (existingRatings.reduce((a,b)=>a+b,0) / existingRatings.length).toFixed(1);
+    document.getElementById('avgRatingValue').textContent = avg;
+    document.getElementById('averageRating').style.display = 'block';
   }
 
-  starContainer.addEventListener('click', e => {
-    const rect = starContainer.getBoundingClientRect();
-    const clickX = e.clientX - rect.left;
-    const starWidth = rect.width / 5;
-    selectedRating = Math.ceil(clickX / starWidth);
-    starContainer.textContent = "★★★★★".slice(0, selectedRating) + "☆☆☆☆☆".slice(0, 5 - selectedRating);
+  const popup = document.getElementById('ratingPopup');
+  const stars = document.querySelectorAll('#ratingStars span');
+
+  if (!localStorage.getItem('ratingClosed') && !localStorage.getItem('userRating')) {
+    setTimeout(() => {
+      popup.style.display = 'flex';
+      gsap.to("#ratingPopup", { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" });
+    }, 8000);
+  }
+
+  stars.forEach(star => {
+    star.addEventListener('mouseover', () => {
+      stars.forEach(s => s.classList.remove('hover'));
+      let val = star.getAttribute('data-value');
+      for (let i = 0; i < val; i++) stars[i].classList.add('hover');
+    });
+
+    star.addEventListener('mouseout', () => {
+      stars.forEach(s => s.classList.remove('hover'));
+    });
+
+    star.addEventListener('click', () => {
+      let val = star.getAttribute('data-value');
+      stars.forEach(s => s.classList.remove('selected'));
+      for (let i = 0; i < val; i++) stars[i].classList.add('selected');
+      
+      
+      localStorage.setItem('userRating', val);
+      let ratings = JSON.parse(localStorage.getItem('allRatings') || "[]");
+      ratings.push(parseInt(val));
+      localStorage.setItem('allRatings', JSON.stringify(ratings));
+      localStorage.setItem('ratingCount', ratings.length);
+      let avg = (ratings.reduce((a,b)=>a+b,0) / ratings.length).toFixed(1);
+      document.getElementById('avgRatingValue').textContent = avg;
+      document.getElementById('ratingCount').textContent = ratings.length;
+
+      // Update average rating display (local, per user)
+      let ratings = JSON.parse(localStorage.getItem('allRatings') || "[]");
+      ratings.push(parseInt(val));
+      localStorage.setItem('allRatings', JSON.stringify(ratings));
+      let avg = (ratings.reduce((a,b)=>a+b,0) / ratings.length).toFixed(1);
+      document.getElementById('avgRatingValue').textContent = avg;
+      document.getElementById('averageRating').style.display = 'block';
+
+      setTimeout(closeRatingPopup, 800);
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function animateAccordions() {
+    const whatHead = document.querySelector('.acc-head[data-acc="what"]');
+    const howHead = document.querySelector('.acc-head[data-acc="how"]');
+    const whyHead = document.querySelector('.acc-head[data-acc="why"]');
+    const triggerPoint = window.innerHeight * 0.85;
+
+    if (whatHead && whatHead.getBoundingClientRect().top < triggerPoint) {
+      whatHead.classList.add('fadeInLeft');
+    }
+    if (howHead && howHead.getBoundingClientRect().top < triggerPoint) {
+      howHead.classList.add('fadeInScale');
+    }
+    if (whyHead && whyHead.getBoundingClientRect().top < triggerPoint) {
+      whyHead.classList.add('fadeInUp');
+    }
+  }
+
+  window.addEventListener('scroll', animateAccordions);
+  animateAccordions();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const socials = document.querySelectorAll('.social-item');
+  const triggerPoint = window.innerHeight * 0.85;
+  function animateSocials() {
+    socials.forEach((item, i) => {
+      if (item.getBoundingClientRect().top < triggerPoint) {
+        setTimeout(() => {
+          item.classList.add('fadeInSocial');
+        }, i * 150);
+      }
+    });
+  }
+  window.addEventListener('scroll', animateSocials);
+  animateSocials();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const textSocials = document.querySelectorAll('.text-social');
+  const triggerPoint = window.innerHeight * 0.85;
+
+  function animateTextSocials() {
+    textSocials.forEach((item, i) => {
+      if (item.getBoundingClientRect().top < triggerPoint && !item.classList.contains('animated')) {
+        setTimeout(() => {
+          item.classList.add('animated');
+        }, i * 200);
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateTextSocials);
+  animateTextSocials();
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Scroll reveal once
+  const reveals = document.querySelectorAll(".reveal");
+  const revealOnScroll = () => {
+    reveals.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        el.classList.add("visible");
+      }
+    });
+  };
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+
+  // Star rating click pop & glow
+  document.querySelectorAll(".star").forEach(star => {
+    star.addEventListener("click", () => {
+      star.classList.add("clicked");
+      setTimeout(() => star.classList.remove("clicked"), 300);
+    });
+  });
+});
+</script><script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Scroll progress bar
+  const progressBar = document.getElementById('scroll-progress');
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (scrollTop / scrollHeight) * 100;
+    progressBar.style.width = scrolled + "%";
   });
 
-  openBtn.addEventListener('click', () => modal.style.display = 'flex');
-  closeBtn.addEventListener('click', () => modal.style.display = 'none');
+  // Typing effect
+  const typingEl = document.querySelector('.typing');
+  if (typingEl) {
+    const words = ["Tailored Ads.", "Fast Growth.", "Predictable Reach."];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
 
-  submitBtn.addEventListener('click', () => {
-    const comment = document.getElementById('rating-comment').value;
-    fetch('/rate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ rating: selectedRating, comment })
-    }).then(res => res.json())
-      .then(() => {
-        modal.style.display = 'none';
-        fetchAverage();
-      });
+    function type() {
+      const currentWord = words[wordIndex];
+      typingEl.textContent = currentWord.substring(0, charIndex);
+      if (!deleting && charIndex < currentWord.length) {
+        charIndex++;
+        setTimeout(type, 100);
+      } else if (deleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(type, 50);
+      } else {
+        deleting = !deleting;
+        if (!deleting) {
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+        setTimeout(type, 800);
+      }
+    }
+    type();
+  }
+
+  // Section background change
+  const sections = document.querySelectorAll('.section-colored');
+  window.addEventListener('scroll', () => {
+    let scrollPos = window.scrollY + window.innerHeight / 2;
+    sections.forEach(sec => {
+      if (scrollPos > sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+        sections.forEach(s => s.classList.remove('active'));
+        sec.classList.add('active');
+      }
+    });
   });
 
-  fetchAverage();
+  // Animated counters
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200; // lower is faster
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / speed;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    const onScroll = () => {
+      const rect = counter.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        updateCount();
+        window.removeEventListener('scroll', onScroll);
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+  });
+
+  // Testimonial carousel
+  const track = document.querySelector('.carousel-track');
+  if (track) {
+    const items = Array.from(track.children);
+    let currentIndex = 0;
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % items.length;
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    });
+  }
+});
+</script>
+<script>
+// Smooth scroll for in-page links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const offset = 80; // adjust if header height changes
+  function scrollToSection(id) {
+    const target = document.querySelector(id);
+    if (target) {
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = target.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }
+  }
+  const homeBtn = document.querySelector(".home-btn");
+  if (homeBtn) homeBtn.addEventListener("click", () => scrollToSection("#hero-section"));
+  const servicesBtn = document.querySelector(".services-btn");
+  if (servicesBtn) servicesBtn.addEventListener("click", () => scrollToSection("#bundles-section"));
+  const aboutBtn = document.querySelector(".about-btn");
+  if (aboutBtn) aboutBtn.addEventListener("click", () => scrollToSection("#membership-section"));
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const packSelect = document.getElementById("pack-select");
+  const styles = ["pack-select-style-1", "pack-select-style-2", "pack-select-style-3"];
+  let currentIndex = 0;
+  if (packSelect) {
+    packSelect.classList.add(styles[currentIndex]);
+    packSelect.addEventListener("change", function() {
+      // Remove current style
+      packSelect.classList.remove(styles[currentIndex]);
+      // Pick next style
+      currentIndex = (currentIndex + 1) % styles.length;
+      packSelect.classList.add(styles[currentIndex]);
+    });
+  }
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector(".carousel");
+  if (carousel) {
+    const revealOnScroll = () => {
+      const rect = carousel.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        carousel.classList.add("visible");
+        window.removeEventListener("scroll", revealOnScroll);
+      }
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  }
+
+  // Auto-slide effect
+  const track = document.querySelector('.carousel-track');
+  if (track) {
+    const items = Array.from(track.children);
+    let currentIndex = 0;
+    const updateSlide = () => {
+      currentIndex = (currentIndex + 1) % items.length;
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    };
+    setInterval(updateSlide, 5000); // Slide every 5 seconds
+
+    // Keep Prev/Next functionality
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % items.length;
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    });
+  }
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const banner = document.getElementById("seasonal-banner");
+  const bannerText = document.getElementById("seasonal-text");
+  const closeBtn = document.getElementById("close-banner");
+
+  const today = new Date();
+  const month = today.getMonth() + 1; // 1-12
+  const day = today.getDate();
+
+  const events = [
+    { name: "Autumn Sale", start: "09-01", end: "11-30", text: "🍂 Autumn Sale! Special offers available now!" },
+    { name: "Winter Holiday Sale", start: "12-01", end: "01-05", text: "❄️ Winter Holiday Sale! Don't miss out!" },
+    { name: "Spring Refresh", start: "03-01", end: "05-31", text: "🌸 Spring Refresh Deals are here!" },
+    { name: "Summer Deals", start: "06-01", end: "08-31", text: "☀️ Summer Deals - Hot discounts available!" },
+    { name: "Back to School", start: "08-15", end: "09-15", text: "🎒 Back to School Specials just for you!" },
+    { name: "Black Friday", start: "11-25", end: "11-25", text: "🖤 Black Friday Mega Sale - One Day Only!" }
+  ];
+
+  function isDateInRange(start, end) {
+    const currentYear = today.getFullYear();
+    const startDate = new Date(`${currentYear}-${start}`);
+    let endDate = new Date(`${currentYear}-${end}`);
+    if (endDate < startDate) {
+      // Handles events crossing year-end
+      endDate.setFullYear(endDate.getFullYear() + 1);
+    }
+    return today >= startDate && today <= endDate;
+  }
+
+  for (const event of events) {
+    if (isDateInRange(event.start, event.end)) {
+      bannerText.textContent = event.text;
+      banner.classList.add("show");
+      break;
+    }
+  }
+
+  closeBtn.addEventListener("click", () => {
+    banner.style.display = "none";
+  });
+});
+</script>
+<style>
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 8px;
+}
+.discounted-price {
+    color: red;
+    font-weight: bold;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const events = [
+        { name: "Summer Discounts", start: "06-30", end: "08-25" },
+        { name: "Autumn Discounts", start: "09-01", end: "10-30" },
+        { name: "Halloween Discounts", start: "10-31", end: "10-31" },
+        { name: "Winter Discounts", start: "11-20", end: "01-20" },
+        { name: "Spring Discounts", start: "02-01", end: "03-30" },
+        { name: "Black Friday Discounts", start: "11-25", end: "11-29" }
+    ];
+
+    
+    const eventEmojis = {
+        "Summer Discounts": "☀️",
+        "Autumn Discounts": "🍂",
+        "Halloween Discounts": "🎃",
+        "Winter Discounts": "❄️",
+        "Spring Discounts": "🌸",
+        "Black Friday Discounts": "🛍️"
+    };
+    
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    let activeEvent = null;
+
+    function parseDate(dateStr, year) {
+        return new Date(year + "-" + dateStr);
+    }
+
+    function isWithinRange(startStr, endStr) {
+        let start = parseDate(startStr, currentYear);
+        let end = parseDate(endStr, currentYear);
+
+        // Handle cross-year range (e.g., Winter Discounts)
+        if (end < start) {
+            let endNextYear = parseDate(endStr, currentYear + 1);
+            if (today >= start && today <= new Date(currentYear + "-12-31")) return true;
+            if (today >= new Date((currentYear+1) + "-01-01") && today <= endNextYear) return true;
+        } else {
+            if (today >= start && today <= end) return true;
+        }
+        return false;
+    }
+
+    for (let event of events) {
+        if (isWithinRange(event.start, event.end)) {
+            activeEvent = event;
+            break;
+        }
+    }
+
+    if (activeEvent) {
+        // Update prices
+        document.querySelectorAll(".price").forEach(priceEl => {
+            // Skip if inside membership-card
+            if (priceEl.closest(".membership-card")) return;
+            let originalPriceText = priceEl.textContent.replace(/[^0-9.,]/g, "");
+            let originalPrice = parseFloat(originalPriceText.replace(",", "."));
+            if (!isNaN(originalPrice)) {
+                let discountedPrice = (originalPrice * 0.7).toFixed(2);
+                priceEl.innerHTML = `<span class="original-price">€${originalPrice.toFixed(2)}</span><span class="discounted-price">€${discountedPrice}</span>`;
+            }
+        });
+
+        // Update seasonal banner
+        const banner = document.getElementById("seasonal-banner");
+        const bannerText = document.getElementById("seasonal-text");
+        if (banner && bannerText) {
+            bannerText.textContent = `${eventEmojis[activeEvent.name] || ""} ${activeEvent.name} - 30% Off All Packs!`;
+
+    // Always append brand name incentive after seasonal banner text
+    const banner = document.getElementById("seasonal-banner");
+    const bannerText = document.getElementById("seasonal-text");
+    if (banner && bannerText) {
+        let currentText = bannerText.innerHTML || bannerText.textContent;
+        let incentiveText = ` 📢 Give us your brand name & get <strong>20% OFF!</strong>`;
+        if (!currentText.includes("Give us your brand name")) {
+            bannerText.innerHTML = currentText + incentiveText;
+        }
+        banner.classList.add("show");
+    }
+    
+            banner.classList.add("show");
+        }
+    }
+});
+</script>
+
+<div class="popup-overlay" id="discounts-popup">
+<div class="popup-content">
+<span class="popup-close">×</span>
+<h2>📢 Give us your brand name &amp; get <strong>20% OFF!</strong></h2>
+<p>Submit your brand name and claim your discount today!</p>
+<a class="popup-cta" href="https://example.com/brand-form">Submit Now</a>
+</div>
+</div>
+<style>
+.discounts-btn {
+  background-color: #e60023;
+  color: white !important;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-left: 8px;
+  transition: background 0.3s ease;
+}
+.discounts-btn:hover {
+  background-color: #cc001f;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: popupFadeIn 0.3s ease;
+}
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.popup-cta {
+  display: inline-block;
+  margin-top: 15px;
+  background: #e60023;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.popup-cta:hover {
+  background: #cc001f;
+}
+@keyframes popupFadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const discountsBtn = document.querySelector(".discounts-btn");
+  const popup = document.getElementById("discounts-popup");
+  const closeBtn = document.querySelector(".popup-close");
+  if (discountsBtn && popup && closeBtn) {
+    discountsBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      popup.style.display = "flex";
+    });
+    closeBtn.addEventListener("click", function() {
+      popup.style.display = "none";
+    });
+    popup.addEventListener("click", function(e) {
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  }
+});
+</script>
+
+<!-- EmailJS Integration -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+    emailjs.init("XsZz7yjZQ9oXz9wNs"); // Replace with your EmailJS user/public key
+})();
+
+document.addEventListener("DOMContentLoaded", function() {
+    const discountForm = document.getElementById("discount-form");
+    const discountPopup = document.getElementById("discount-popup");
+
+    if(discountForm){
+        discountForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            emailjs.sendForm("service_qunmnwj", "template_dplixav", this)
+                .then(function() {
+                    alert("🎉 Your message has been sent! We'll get back to you soon.");
+                    discountPopup.style.display = "none";
+                }, function(error) {
+                    alert("❌ Oops! Something went wrong: " + JSON.stringify(error));
+                });
+        });
+    }
+});
+</script>
+
+
+<!-- Terms & Conditions Disclaimer -->
+<div id="terms-disclaimer">
+  <div class="terms-header">Terms and Conditions</div>
+  <div class="terms-body">
+    By accessing and using this website, and by purchasing any packages or services from AHC Agency, you acknowledge and agree that our sole obligation is to create and produce the agreed-upon content as described in your selected package. AHC Agency does not make any guarantees, representations, or warranties regarding the number of views, engagement, revenue, or any other specific outcomes. All services are provided on a best-effort basis within reasonable production timelines, which may be subject to adjustments in the event of unforeseen circumstances. You agree that any materials or information provided to us for use in content creation are either owned by you or properly licensed for our use, and that you will not provide any content that infringes upon third-party rights or violates applicable laws. Payment is required in accordance with the terms specified at the time of purchase, and all sales are final unless otherwise stated in writing. By continuing to use this website, you consent to our use of cookies and similar technologies for improving site functionality, analytics, and user experience. If you do not agree to these terms, you must decline and immediately discontinue use of this site.
+  </div>
+  <div class="terms-actions">
+    <button id="terms-decline">Decline</button>
+    <button id="terms-accept">Accept</button>
+  </div>
+</div>
+
+<style>
+#terms-disclaimer {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+  z-index: 10000;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+#terms-disclaimer.show {
+  bottom: 0;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#terms-disclaimer.show {
+  bottom: 0;
+}
+
+#terms-disclaimer .terms-header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#terms-disclaimer .terms-body {
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+#terms-disclaimer .terms-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+#terms-disclaimer .terms-actions button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#terms-accept {
+  background: linear-gradient(90deg, #20c997, #17a2b8);
+  color: white;
+}
+
+#terms-decline {
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  color: white;
+}
+
+/* Strong equal-height pack card enforcement - high specificity and !important overrides */
+.packs {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+  gap: 14px !important;
+  align-items: stretch !important;
+  grid-auto-rows: 1fr !important; /* make every grid row equal height */
+  width: 100% !important;
+}
+
+/* Ensure immediate child .pack elements stretch to fill grid cell */
+.packs > .pack {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  padding: 14px !important;
+}
+
+/* Push price to the bottom so cards align visually */
+.packs > .pack .price,
+.packs > .pack div.price {
+  margin-top: auto !important;
+  align-self: flex-end !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  color: var(--fg) !important;
+}
+
+/* Remove any stray top margins inside pack content that can break alignment */
+.packs > .pack * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Make sure inner flex containers do not collapse height */
+.packs > .pack > div {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+/* Small screens: single column */
+@media (max-width: 1000px) {
+  .packs { grid-template-columns: 1fr !important; grid-auto-rows: auto !important; }
+  .packs > .pack { height: auto !important; }
+}
+
+
+/* Force even 2-column layout for packs on desktop */
+@media (min-width: 768px) {
+  .packs {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+    align-items: stretch !important;
+  }
+  .packs .pack {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+    padding: 14px !important;
+  }
+  .packs .pack * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .packs .pack .price {
+    margin-top: auto !important;
+    align-self: flex-start !important;
+  }
+}
+
+
+/* Ensure long words wrap inside membership cards */
+.membership-card, .membership-card * {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+
+/* Smaller, clean white/black/gray styled pack cards */
+.packs .pack {
+  padding: 10px !important;
+  font-size: 14px !important;
+  background: #ffffff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  height: auto !important;
+}
+
+.packs .pack h3 {
+  font-size: 16px !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  margin-bottom: 4px !important;
+}
+
+.packs .pack p {
+  font-size: 13px !important;
+  color: #555555 !important;
+  margin-bottom: 8px !important;
+}
+
+.packs .pack .price {
+  font-size: 16px !important;
+  color: #333333 !important;
+  font-weight: 600 !important;
+}
+
+
+/* Balanced styling for pack cards */
+.packs .pack {
+  padding: 14px !important;
+  background: #ffffff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  height: auto !important;
+}
+
+.packs .pack h3 {
+  font-size: 18px !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  margin-bottom: 6px !important;
+}
+
+.packs .pack p {
+  font-size: 14px !important;
+  color: #555555 !important;
+  margin-bottom: 8px !important;
+}
+
+.packs .pack .price {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+
+/* Bigger text, smaller button/card format */
+.packs .pack {
+  padding: 10px !important; /* smaller overall card */
+  background: #ffffff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  height: auto !important;
+}
+
+.packs .pack h3 {
+  font-size: 20px !important; /* bigger heading text */
+  color: #000000 !important;
+  font-weight: 700 !important;
+  margin-bottom: 6px !important;
+}
+
+.packs .pack p {
+  font-size: 16px !important; /* bigger subtext */
+  color: #555555 !important;
+  margin-bottom: 8px !important;
+}
+
+.packs .pack .price {
+  font-size: 20px !important; /* bigger price text */
+  font-weight: 700 !important;
+}
+
+
+/* Bigger title and subtext fonts for pack cards */
+.packs .pack h3 {
+  font-size: 24px !important; /* much bigger for pack title */
+  font-weight: 800 !important;
+  color: #000000 !important;
+}
+
+.packs .pack p {
+  font-size: 18px !important; /* bigger for subtext */
+  color: #444444 !important;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (!localStorage.getItem('termsAccepted')) {
+    const disclaimer = document.getElementById('terms-disclaimer');
+    setTimeout(() => {
+      disclaimer.classList.add('show');
+    }, 500);
+
+    document.getElementById('terms-accept').addEventListener('click', function() {
+      disclaimer.classList.remove('show');
+      localStorage.setItem('termsAccepted', 'true');
+    });
+
+    document.getElementById('terms-decline').addEventListener('click', function() {
+      window.location.href = 'https://www.google.com';
+    });
+  }
 });
 </script>
 
