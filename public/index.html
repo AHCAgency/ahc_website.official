@@ -4257,68 +4257,82 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+</body>
 
+<!-- Mobile-Only Centered Modal -->
 <style>
-/* Mobile-only popup banner */
-#mobile-experience-banner {
-  display: none; /* hidden by default */
+#mobile-experience-overlay {
+  display: none;
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95%;
-  background-color: #ff8c42; /* orangish */
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 12px 40px 12px 14px;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  z-index: 9999;
-  text-align: center;
-  animation: slideDown 0.4s ease forwards;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 9998;
 }
 
-#mobile-experience-banner button {
+#mobile-experience-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 320px;
+  background-color: #ff8c42;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  text-align: center;
+  z-index: 9999;
+}
+
+#mobile-experience-modal button {
   position: absolute;
   right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 12px;
   background: none;
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-@keyframes slideDown {
-  from { transform: translate(-50%, -100%); opacity: 0; }
-  to { transform: translate(-50%, 0); opacity: 1; }
-}
-
 @media (min-width: 769px) {
-  #mobile-experience-banner { display: none !important; }
+  #mobile-experience-overlay,
+  #mobile-experience-modal { display: none !important; }
 }
 </style>
 
-<div id="mobile-experience-banner">
-  💻 For the best experience, view on desktop!
-  <button id="close-mobile-banner">×</button>
+<div id="mobile-experience-overlay"></div>
+
+<div id="mobile-experience-modal">
+  <button id="close-mobile-modal">×</button>
+  💻 For the best experience,<br> view on desktop!
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth <= 768) { // Only for mobile/tablet
-    setTimeout(() => {
-      document.getElementById("mobile-experience-banner").style.display = "block";
-    }, 2000); // show after 2 seconds
+(function() {
+  function showMobileModal() {
+    if (window.innerWidth <= 768) {
+      setTimeout(function() {
+        document.getElementById("mobile-experience-overlay").style.display = "block";
+        document.getElementById("mobile-experience-modal").style.display = "block";
+      }, 2000);
+    }
   }
-
-  document.getElementById("close-mobile-banner").addEventListener("click", function() {
-    document.getElementById("mobile-experience-banner").style.display = "none";
-  });
-});
+  function closeMobileModal() {
+    document.getElementById("mobile-experience-overlay").style.display = "none";
+    document.getElementById("mobile-experience-modal").style.display = "none";
+  }
+  document.getElementById("close-mobile-modal")?.addEventListener("click", closeMobileModal);
+  document.getElementById("mobile-experience-overlay")?.addEventListener("click", closeMobileModal);
+  window.addEventListener("load", showMobileModal);
+})();
 </script>
 
-</body>
 </html>
