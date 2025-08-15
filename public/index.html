@@ -1665,7 +1665,6 @@ body {
         color: #ffcc00;
     }
     </style>
-
 <!-- Big Pack Card Text CSS - injected by ChatGPT -->
 <style>
 /* High-specificity rules to enlarge pack titles, subtitles, and prices */
@@ -1703,7 +1702,6 @@ body {
 }
 </style>
 <!-- End injected CSS -->
-
 </head>
 <body data-theme="light">
 <div id="seasonal-banner">
@@ -2337,30 +2335,22 @@ function closeBanner() {
 </div>
 </div>
 <div class="nav">
-
 <!-- Discount Button -->
 <button class="btn playful-discount-btn" id="discount-btn">🎁 Discounts</button>
-
-
 <!-- Discount Popup -->
-<div id="discount-popup" class="discount-popup">
-  <div class="discount-popup-content">
-    <span class="discount-popup-close" id="discount-popup-close">&times;</span>
-    <h2>🎉 Get a Special Discount!</h2>
-    <p>Give us a new business name idea 💡 or leave us a LinkedIn rating ⭐ and enjoy <strong>20% OFF</strong> your next order!</p>
-
-    
+<div class="discount-popup" id="discount-popup">
+<div class="discount-popup-content">
+<span class="discount-popup-close" id="discount-popup-close">×</span>
+<h2>🎉 Get a Special Discount!</h2>
+<p>Give us a new business name idea 💡 or leave us a LinkedIn rating ⭐ and enjoy <strong>20% OFF</strong> your next order!</p>
 <form id="discount-form">
-  <input type="text" name="from_name" placeholder="Your name" required>
-  <input type="email" name="from_email" placeholder="Your email address" required>
-  <textarea name="message" placeholder="Type your business name idea or feedback..." rows="4" required></textarea>
-  <button type="submit" class="btn submit-discount">Submit</button>
+<input name="from_name" placeholder="Your name" required="" type="text"/>
+<input name="from_email" placeholder="Your email address" required="" type="email"/>
+<textarea name="message" placeholder="Type your business name idea or feedback..." required="" rows="4"></textarea>
+<button class="btn submit-discount" type="submit">Submit</button>
 </form>
-
-  </div>
 </div>
-
-
+</div>
 <style>
 .playful-discount-btn {
   background: linear-gradient(90deg, #ff9a9e, #fad0c4);
@@ -2417,7 +2407,6 @@ function closeBanner() {
   to { transform: scale(1); opacity: 1; }
 }
 </style>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const discountBtn = document.getElementById("discount-btn");
@@ -2439,7 +2428,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
 <a class="btn" href="https://tinyurl.com/ahc-agency-portfolio" rel="noopener noreferrer" target="_blank">Portfolio</a>
 <a class="nav-home btn home-btn" href="#hero-section">Home</a>
 <a class="nav-services btn services-btn" href="#bundles-section">Services</a>
@@ -2512,13 +2500,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <table aria-labelledby="services">
 <thead><tr><th>Service</th><th>Includes</th><th>Price (€)</th></tr></thead>
 <tbody>
-<tr><td>Starter Website</td><td>1-page</td><td>€50</td></tr>
-<tr><td>Launch Pack</td><td>1-page + 1 video</td><td>€55</td></tr>
-<tr><td>Business Website</td><td>3-page</td><td>€75</td></tr>
-<tr><td>Starter Biz Bundle</td><td>3-page + 3 videos</td><td>€85</td></tr>
-<tr><td>Go Viral Bundle</td><td>3-page + 8 videos</td><td>€110</td></tr>
-<tr><td>Custom Web Project</td><td>Advanced</td><td>From €100</td></tr>
-</tbody>
+<tr><td>Starter Website</td><td>1-page</td><td>€150</td></tr><tr><td>Business Website</td><td>2-page + stock photos</td><td>€200</td></tr><tr><td>Custom Full Web Project</td><td>—</td><td>From €200</td></tr><tr><td>Redo Website</td><td>Additional planning session &amp; full design refresh</td><td>Tailored quote based on project scope</td></tr></tbody>
 </table>
 <div class="accordion" style="margin-top:12px">
 <div class="acc-item">
@@ -3861,7 +3843,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
-
 <div class="popup-overlay" id="discounts-popup">
 <div class="popup-content">
 <span class="popup-close">×</span>
@@ -3945,9 +3926,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
-
 <!-- EmailJS Integration -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 (function(){
     emailjs.init("XsZz7yjZQ9oXz9wNs"); // Replace with your EmailJS user/public key
@@ -3971,20 +3951,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
-
-
 <!-- Terms & Conditions Disclaimer -->
 <div id="terms-disclaimer">
-  <div class="terms-header">Terms and Conditions</div>
-  <div class="terms-body">
+<div class="terms-header">Terms and Conditions</div>
+<div class="terms-body">
     By accessing and using this website, and by purchasing any packages or services from AHC Agency, you acknowledge and agree that our sole obligation is to create and produce the agreed-upon content as described in your selected package. AHC Agency does not make any guarantees, representations, or warranties regarding the number of views, engagement, revenue, or any other specific outcomes. All services are provided on a best-effort basis within reasonable production timelines, which may be subject to adjustments in the event of unforeseen circumstances. You agree that any materials or information provided to us for use in content creation are either owned by you or properly licensed for our use, and that you will not provide any content that infringes upon third-party rights or violates applicable laws. Payment is required in accordance with the terms specified at the time of purchase, and all sales are final unless otherwise stated in writing. By continuing to use this website, you consent to our use of cookies and similar technologies for improving site functionality, analytics, and user experience. If you do not agree to these terms, you must decline and immediately discontinue use of this site.
   </div>
-  <div class="terms-actions">
-    <button id="terms-decline">Decline</button>
-    <button id="terms-accept">Accept</button>
-  </div>
+<div class="terms-actions">
+<button id="terms-decline">Decline</button>
+<button id="terms-accept">Accept</button>
 </div>
-
+</div>
 <style>
 #terms-disclaimer {
   position: fixed;
@@ -4236,7 +4213,6 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 </style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   if (!localStorage.getItem('termsAccepted')) {
@@ -4256,9 +4232,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-
 </body>
-
 <!-- Mobile-Only Centered Modal -->
 <style>
 #mobile-experience-overlay {
@@ -4307,14 +4281,11 @@ document.addEventListener('DOMContentLoaded', function() {
   #mobile-experience-modal { display: none !important; }
 }
 </style>
-
 <div id="mobile-experience-overlay"></div>
-
 <div id="mobile-experience-modal">
-  <button id="close-mobile-modal">×</button>
-  💻 For the best experience,<br> view on desktop!
+<button id="close-mobile-modal">×</button>
+  💻 For the best experience,<br/> view on desktop!
 </div>
-
 <script>
 (function() {
   function showMobileModal() {
@@ -4334,5 +4305,4 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("load", showMobileModal);
 })();
 </script>
-
 </html>
